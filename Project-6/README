@@ -1,0 +1,66 @@
+The Monopoly 
+
+Gameplay Rules for Computer:
+
+• When played against the computer, it rolls a dice just like a user. 
+Dice rolling result for the computer must be printed as “Computer 
+rolled the dice: N”.
+
+• If computer arrives at an unowned property, it decides what to do 
+based on the followings:
+
+o If the price of the property is below the average cost of all 
+properties, then computer must buy the property.
+
+o Otherwise, the computer rolls the dice again. If the outcome is 
+between 1 and 3, then the computer must buy the property. If the 
+roll is between 4 and 6, the computer skips its turn. 
+
+• If the computer lands on a property it owns, it may construct up to 3 
+houses on that property. The number of houses it can built depends on 
+the number of properties it owns:
+
+o If the computer owns 1/3 of all the properties, it rolls a dice. 
+If the result is between 1 and 3, then the computer constructs a 
+house. Otherwise, it skips the current turn.
+
+o If computer does not have 1/3 of all his properties, it skips 
+its turn.
+
+• When computer does not have enough money to pay its rent/tax, then the 
+bank asks it to sell some of its properties. The computer must sell 
+starting with the highest priced property till it pays off its dept.
+
+• Player_type for computer is “cap”. Update your implementation 
+accordingly.
+
+Board Implementation:
+• You must convert your array-based board implementation to a linked 
+list.
+
+• There are 4 more blocks added to the board. The total number of blocks 
+on the board now is 24.
+
+Fortune Cards:
+• Whenever a player lands on a fortune card block, player draws a card 
+from fortune card deck (you randomly pick a fortune card). It carries 
+out the action the card says.
+
+• Location of fortune card blocks on board are defined in the 
+blocks.xlsx file.
+
+• Block type is “fortune”. You must update your block_type enumeration 
+implementation accordingly.
+
+• Define a struct with name “fortune_card”. 
+
+• Fortune cards are defined below.
+
+Card No Fortune Card Name Explanation
+1 Free House Build a house on one of your properties for 
+free.
+2 Time Travel Roll a dice. If result is [1-3], move forward 
+by 2 blocks. Else, move backward by 2 blocks.
+3 Garnishment Pay 5.000 to the bank.
+4 Generosity Give 10.000 to the opponent.
+5 Treasure Hunter Take 20.000 from the bank.
