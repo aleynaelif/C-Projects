@@ -1,0 +1,91 @@
+Professor Oak who is known as Pokémon creator, lost his laboratory on a
+explosion because of an mischievous fire Pokémon. After so much effort, Prof. Oak
+rebuild his own lab but he couldn’t activate Pokémon creating machine because
+storage of the machine has broken. Professor can do wonders with Pokémon’s but
+he doesn’t know anything about software developing. Therefore, he asked
+students of Gebze Technical University for help to make the machine functional
+again. Professor send an image of the old machine’s control panel that is shown
+below: 
+
+MENU
+Create Body
+Set Color
+Load Moves
+Set Attack Power
+Show Current Pokémon
+
+You are expected to code a function for each menu option. Write the code of the
+functions that are shown below by obeying given function prototypes. 
+
+Write a function that takes shape of the Pokémon as an input
+and calculates area of the shape and returns it. Parameters that are used to
+calculate the area of the shape must be taken from the user in the function.
+Number of the parameters can be changed according to the shape of the Pokémon.
+The shapes could be rectangular, square or circular and all the shape types must
+be pre-defined on the program like: Square is 1, rectangular is 2 and circular is 3.
+The function prototype is:
+
+double CreateBody (int shape)
+
+Write a function that takes a color code as an integer input to
+paint the Pokémon and returns revised color code. If the color code is between 0
+and 1000 then the function returns modulo five of the code, otherwise, it always
+returns 1 as the revised color code. The colors could be red, yellow, blue, black or
+white and all the colors must be pre-defined on the program like: red is 0, yellow is
+1, blue is 2, black is 3 and white is 4. The function prototype is:
+
+int SetColor (int color) 
+
+Write a function that takes shape and size of the body as an
+input and calculates length of one move of the Pokémon and returns the length.
+The length of one move is equal to perimeter of the body (Assume that the shorter
+edge is 5 if the shape is rectangular). The function prototype is:
+
+double LoadMoves(int shape, double body_size)
+
+Write a function that specifies attack power of the Pokémon. It
+takes lower and upper bound of the attack power and generates a random integer
+attack power between the bounds and returns the power. The function prototype is:
+
+int SetAtackPower(int lower_bound, int upper_bound) 
+
+Write a function that prints created Pokémon with its wonderful
+specifications like the figure that is shown below:
+
+(Rectangular Pokémon example)
+
+XXXXXXX
+XXXXXXX
+XXXXXXX
+XXXXXXX
+XXXXXXX
+
+Name: Rectangular Pokémon
+Size: 35
+Color: Red
+Move: 24
+Attack Power: 78
+
+(Circular Pokémon example)
+
+X
+X X
+X
+
+Name: Circular Pokémon
+Size: 28.26
+Color: Blue
+Move: 18.84
+Attack Power: 102
+
+As you notice, the shapes of the Pokémon’s are dynamic and that means you
+should print them according to their size. On the figure that is shown above, the
+function prints X’s by the length of the edges on vertical and horizontal direction
+(Assume that the shorter edge is 5 if the shape is rectangular). If the shape is
+circular then put tabs between two X’s which are on the middle of the shape as
+much as minus one of the radius of the shape, and align the other rows as
+expected by using the middle row. The function prototype is:
+
+void ShowPokemon(int shape, double body_size, int color, double
+move_length, int attack_power)
+
