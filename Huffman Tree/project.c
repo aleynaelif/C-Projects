@@ -1,6 +1,3 @@
-//Aleyna Elif Özkan 
-//1801042652
-
 #include <stdio.h>
 #include <stdlib.h>
 
