@@ -1,7 +1,5 @@
 #include<stdio.h>
 
-//Aleyna Elif ÖZKAN 1801042652
-
 int divisior(int num1,int num2);
 int common(int num1,int num2);
 void sorting(int elements[], int left, int medium, int right);
